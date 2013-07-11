@@ -58,12 +58,17 @@ CREATE TABLE map (
 , CONSTRAINT pivot_id_fk1 FOREIGN KEY (pivot_id) REFERENCES pivots (pivot_id))
 ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
-
-INSERT INTO pivots (pivot_id, pivot_name) VALUES(NULL, "Josh");
 INSERT INTO app_users VALUES(NULL, "Brayden", 2083905008);
+INSERT INTO pivots (pivot_id, pivot_name) VALUES(NULL, "joshPivot");
+INSERT INTO pivots (pivot_id, pivot_name) VALUES(NULL, "otherPivot");
 INSERT INTO map VALUES(1, 1, NULL);
+INSERT INTO map VALUES(1, 2, NULL);
+
+
 INSERT INTO pivot_log (note_id, note) VALUES(NULL, "Here is a note thing");
 INSERT INTO pivotsMap VALUES(1, 1, NULL);
+INSERT INTO pivot_log (note_id, note) VALUES(NULL, "Here is another note thing");
+INSERT INTO pivotsMap VALUES(2, 1, NULL);
 
 
 ALTER TABLE map
